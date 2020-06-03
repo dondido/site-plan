@@ -1,0 +1,15 @@
+.menu-panel {
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    height: 48px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.reset-button,
+.print-button {
+    margin: 0 4px;
+}
+.zoom-control {
+    display: none;
+}

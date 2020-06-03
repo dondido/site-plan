@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Site Plan Viewer</title>
+    <meta id="metaViewport" name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Floorplan Demo">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+    <main class="main">
+        <input id="menu-switch" type="checkbox"/>
+        <header class="header">
+            <h1 class="plan-name"></h1>
+        </header>
+        <div class="port" data-drag-area>
+            <div class="view draggable pinchable"></div>
+        </div>
+        <div class="menu-panel">
+            <button class="reset-button">Reset</button>
+            <button type="button" class="print-button">Print</button>
+            <div class="zoom-control" data-z="100">
+                <div class="zoom-range">
+                    <input type="range" min="0" max="100" value="0" class="zoom-slider">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <button class="modal-close-button">&times;</button>
+                <div class="modal-body"></div>
+            </div>    
+        </div>
+    </main>
+    <script src="js/gestures.js" defer type="module"></script>
+    <script src="js/index.js" defer type="module"></script>
+    <script src="js/utils.js" defer type="module"></script>
+</body>
+</html>

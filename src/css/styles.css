@@ -1,0 +1,280 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+#menu-switch {
+    display: none;
+}
+.view {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+.view svg {
+    overflow: visible;
+    max-height: 100vh;
+}
+.view * {
+    pointer-events: none;
+}
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.port {
+    position: relative;
+    touch-action: none;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    padding: 0 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: right;
+}
+.menu-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .7);
+}
+.zoom-control {
+    width: 48px;
+    height: 240px;
+    position: relative;
+}
+.zoom-range {
+    transform-origin: left center;
+    transform: rotate(-90deg) translate(-204px, 20px);
+}
+.zoom-slider {
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 200px;
+}
+.zoom-slider::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 2px;
+    background: whitesmoke;
+    border: none;
+}
+.zoom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: whitesmoke url('../images/zoom.svg') no-repeat center;
+    padding: 4px;
+    transform: rotate(90deg);
+    margin-top: -12px;
+}
+.zoom-slider:focus::-webkit-slider-runnable-track {
+    background: whitesmoke;
+}
+.reset-button:focus,
+.print-button:focus,
+.zoom-slider:focus {
+    outline: none;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, .4); /* Black w/ opacity */
+  }
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-body {
+    color: #575757;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.scrollable-area {
+    overflow: auto;
+}
+.modal.opened {
+    display: flex;
+}
+  /* The Close Button */
+.modal-close-button {
+    color: #aaaaaa;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-close-button:hover,
+.modal-close-button:focus {
+    color: #000;
+    outline: none;
+}
+.facade-img {
+    width: 100%;
+    vertical-align: middle;
+}
+.view-home-link {
+    color: inherit;
+    text-decoration: none;
+}
+.view-home-container {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-between;
+    color: white;
+}
+.property-id {
+    margin: 10px;
+    font-size: 16px;
+}
+.house-misc-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.house-type-container,
+.sq-ft-container,
+.bedrooms-container,
+.bathrooms-container {
+    width: 50%;
+    border-top: 1px solid lightgrey;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.house-type-container,
+.bedrooms-container {
+    border-right: 1px solid lightgrey;
+}
+.house-name-price-container {
+    display: flex;
+    padding: 20px 10px;
+    color: #204e5e;
+    font-weight: bold;
+}
+.house-name-container,
+.house-price-container {
+    flex: 1 1 50%;
+}
+.house-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.priced-from {
+    font-size: 14px;
+    font-weight: bold;
+}
+.house-name-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.house-price {
+    color: #819f2f;
+}
+.state-name,
+.house-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+.elevation {
+    display: inline-block;
+}
+.house-type,
+.sq-ft,
+.bedrooms,
+.bathrooms {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.house-type-container:before,
+.sq-ft:before,
+.bedrooms:before,
+.bathrooms:before {
+    float: left;
+    margin-right: 12px;
+    line-height: 48px;
+    content: url(../images/hometype.svg);
+}
+.sq-ft:before {
+    content: url(../images/sq_ft.svg);
+}
+.bedrooms:before {
+    content: url(../images/bedrooms.svg);
+}
+.bathrooms:before {
+    content: url(../images/bathrooms.svg);
+    transform: scale(1.2);
+}
+.view-home-link:after {
+    content: url(../images/arrow.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.view .building {
+    cursor: pointer;
+    pointer-events: all;
+}
+.building:hover {
+    opacity: .7;
+}
+#menu-switch:checked + .menu-panel {
+    display: none;
+}
+.plan-name {
+    margin: 0;
+    font-size: 20px;
+}
+.reset-button,
+.print-button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+.reset-button:before,
+.print-button:before {
+    display: block;
+    width: 20px;
+    content: url(../images/print.svg);
+}
+.reset-button:before {
+    content: url(../images/reset.svg);
+}
