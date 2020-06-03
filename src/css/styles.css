@@ -108,7 +108,7 @@ body {
     margin: auto;
     max-width: calc(100vw - 40px);
     max-height: calc(100vh - 40px);
-    width: 600px;
+    width: 420px;
     display: flex;
     flex-direction: column;
 }
