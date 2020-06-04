@@ -2,14 +2,19 @@
     top: auto;
     bottom: 0;
     width: 100vw;
-    height: 48px;
+    height: 34px;
     flex-direction: row;
-    justify-content: flex-end;
 }
+.options-button,
 .reset-button,
 .print-button {
     margin: 0 4px;
 }
 .zoom-control {
     display: none;
+}
+.options-panel {
+    bottom: 59px;
+    left: 2px;
+    top: auto;
 }

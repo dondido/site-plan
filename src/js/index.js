@@ -1,7 +1,7 @@
 import { Drag } from './gestures.js';
 import { setTransform } from './utils.js';
 
-let plan, modalTemplate, drag, $scene;
+let plan, modalTemplate, optionTemplate, drag, $scene, $activeOption;
 const handleJson = response => response.json();
 const handleText = response => response.text();
 const $port = document.querySelector('.port');
@@ -10,8 +10,11 @@ const $zoomSlider = document.querySelector('.zoom-slider');
 const $zoomControl = document.querySelector('.zoom-control');
 const $modal = document.querySelector('.modal');
 const $modalBody = document.querySelector('.modal-body');
+const $optionPanel = document.querySelector('.options-panel');
+const $optionsButton = document.querySelector('.options-button');
 
 const setModalTemplate = template => modalTemplate = template;
+const setOptionTemplate = template => optionTemplate = template;
 const interpolate = (acc, [key, value]) => acc.replace(new RegExp(key.toUpperCase(), 'g'), value);
 
 
@@ -140,7 +143,9 @@ const setScale = () => {
     $floorOption.dataset.ref = ref;
     $floorSelector.appendChild($floorOption);
 }; */
-
+const optionPromise = fetch('option.html')
+    .then(handleText)
+    .then(setOptionTemplate);
 const modalPromise = fetch('modal.html')
     .then(handleText)
     .then(setModalTemplate);
@@ -158,15 +163,40 @@ const clickBuilding = (x, y) => {
 };
 const insertView = (text) => {
     const { buildingSelector = '.building', buildings, palettes, stages } = plan;
+    const setState = $building => {
+        const { state } = buildings[$building.id];
+        $building.classList.add('building');
+        $building.setAttribute('style', `fill: ${palettes[state]}`);
+    };
+    
     $view.innerHTML = text;
     $scene = $view.firstElementChild;
     drag = new Drag({ $zoomSlider, zoom, clickBuilding });
     init();
     const $buildings = Array.from($scene.querySelectorAll(buildingSelector));
-    $buildings.forEach($building => {
-        const { state } = buildings[$building.id];
-        $building.classList.add('building');
-        $building.setAttribute('style', `fill: ${palettes[state]}`);
+    $buildings.forEach(setState);
+    $optionPanel.innerHTML = Object.entries(stages).reduce((sum, [key, value]) =>
+        `${sum}${[['guid', key], ['stage', value], ['homestyle', palettes[key]]].reduce(interpolate, optionTemplate)}`, '');
+    Array.from($optionPanel.querySelectorAll('.button-switch')).forEach(($button) => {
+        $button.onclick = ({ target }) => {
+            const { id } = target;
+            const setActiveState = $building => {
+                const fill = buildings[$building.id].state === id ? palettes[id] : 'rgba(255, 255, 255, .3)';
+                $building.setAttribute('style', `fill: ${fill}`);
+            };
+            if ($activeOption && $activeOption.isSameNode(target) === false) {
+                $activeOption.setAttribute('aria-checked', false);
+            }
+            const checked = target.getAttribute('aria-checked') === 'false';
+            target.setAttribute('aria-checked', checked);
+            if(checked) {
+                $buildings.forEach(setActiveState);
+                $activeOption = target;
+            }
+            else {
+                $buildings.forEach(setState);
+            }
+        };
     });
     /* const buildingIds = Array.from($scene.querySelectorAll('[id^=building]'), ({ id }) => id);
     const matchBuilding = ({ id }) => id.startsWith('building');
@@ -212,6 +242,7 @@ const planPromise = fetch('plan.json')
     .then(handleJson)
     .then(handlePlan);
 
+$optionsButton.onclick = () => $optionPanel.toggleAttribute('hidden');
 document.querySelector('.modal-close-button').onclick = () => $modal.classList.remove('opened');
 document.querySelector('.print-button').onclick = () => window.print();
 document.querySelector('.reset-button').onclick = reset;
