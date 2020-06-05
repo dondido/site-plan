@@ -57,13 +57,11 @@ const clickBuilding = (x, y) => {
 };
 const insertView = (text) => {
     const { buildingSelector = '.building', buildings, palettes, stages } = plan;
-    console.log(333, text)
     const setState = $building => {
         const { state } = buildings[$building.id];
         $building.classList.add('building');
         $building.setAttribute('style', `fill: ${palettes[state]}`);
     };
-    
     $view.innerHTML = text;
     $scene = $view.firstElementChild;
     drag = new Drag({ $zoomSlider, zoom, clickBuilding });
