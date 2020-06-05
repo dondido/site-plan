@@ -116,6 +116,9 @@ body {
 .zoom-slider:focus {
     outline: none;
 }
+.options-panel:not([hidden]) + .menu-panel .options-button {
+    filter: invert(23%) sepia(84%) saturate(2173%) hue-rotate(275deg) brightness(85%) contrast(99%);
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -332,7 +335,15 @@ body {
     transition: transform .2s;
 }
 .button-switch[aria-checked=true]:before {
-    transform: translateX(11px);
+    transform: translateX(10px);
+}
+@-moz-document url-prefix() {
+    .button-switch:before {
+        transform: translateX(-4px);
+    }
+    .button-switch[aria-checked=true]:before {
+        transform: translateX(8px);
+    }
 }
 .option-item {
     font-size: 13px;
