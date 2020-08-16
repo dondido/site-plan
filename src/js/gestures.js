@@ -3,23 +3,29 @@ import { setTransform } from './utils.js';
 export class Drag {
     constructor(props) {
         Object.assign(this, props);
+        this.pointers = [];
+        this.initialZoom = 0;
+        this.pointerup = this.pointerup.bind(this);
+        this.pointerdown = this.pointerdown.bind(this);
+        this.pointermove = this.pointermove.bind(this);
+        this.preventClick = this.preventClick.bind(this);
     }
     attach() {
         document.body.onpointerdown = this.pointerdown;
         document.body.onpointerup = this.pointerup;
         document.body.onpointercancel =this.pointerup;
     }
-    pointers = []
-    initialZoom = 0
-    pointerup = ({ clientX, clientY }) => {
+    pointerup({ clientX, clientY }) {
         this.notAClick !== true && this.pointers.length && this.clickBuilding(clientX, clientY);
         this.pointers = [];
         document.body.onpointermove = null;
         this.notAClick = this.hypo = this.x2 = this.y2 = 0;
         clearTimeout(this.clickTime);
     }
-    preventClick = () => this.notAClick = true
-    pointerdown = (e) => {
+    preventClick() {
+        this.notAClick = true;
+    }
+    pointerdown(e) {
         if(['INPUT', 'BUTTON', 'A'].includes(e.target.tagName)) {
             return;
         }
@@ -38,7 +44,7 @@ export class Drag {
         }
         this.pointers.push(e);
     }
-    pointermove = (e) => {
+    pointermove(e) {
         e.preventDefault();
         const [ e1, e2, e3 ] = this.pointers;
         const { $target } = this;

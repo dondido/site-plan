@@ -18,3 +18,12 @@
     left: 2px;
     top: auto;
 }
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .button-switch:before { 
+        margin-left: -4px;
+    }
+    .options-panel {
+        bottom: 174px;
+    }
+}}
