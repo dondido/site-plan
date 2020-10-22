@@ -42,39 +42,44 @@ const setScale = () => {
         setTransform($view);
     }
 };
-
 const clickBuilding = (x, y) => {
-    const { buildingSelector = '.building', buildings, palettes, stages } = plan;
-    const matchBuilding = $node => ['A', 'BUTTON'].includes($node.tagName) || $node.matches(buildingSelector);
-    const ref = buildings[(document.elementsFromPoint(x, y).find(matchBuilding) || {}).id];
+    const { buildings, palettes } = plan;
+    const $targetNodes = document.elementsFromPoint(x, y);
+    const matchBuilding = buiding => $targetNodes.some($node => buiding.selector === $node.id);
+    const ref = buildings.find(matchBuilding);
     if(ref) {
         const { state } = ref;
-        ref.homestyle = palettes[state];
-        ref.stage = stages[state] || state;
-        $modalBody.innerHTML = Object.entries(ref).reduce(interpolate, modalTemplate);
-        $modal.classList.add('opened');
+        const palette = palettes.find(({ key }) => key === state);
+        if(palette) {
+            ref.homestyle = palette.color;
+            ref.stage = palette.name;
+            $modalBody.innerHTML = Object.entries(ref).reduce(interpolate, modalTemplate);
+            $modal.classList.add('opened');
+        }
     }
 };
 const insertView = (text) => {
-    const { buildingSelector = '.building', buildings, palettes, stages } = plan;
-    const setState = $building => {
-        const { state } = buildings[$building.id];
+    const { buildings, palettes } = plan;
+    const getColor = state => palettes.find(({ key }) => key === state)?.color;
+    const setState = ({ selector, state }) => {
+        const $building = $scene.getElementById(selector);
         $building.classList.add('building');
-        $building.setAttribute('style', `fill: ${palettes[state]}`);
+        $building.setAttribute('style', `fill: ${getColor(state)}`);
+        return $building;
     };
     $view.innerHTML = text;
     $scene = $view.firstElementChild;
     drag = new Drag({ $zoomSlider, zoom, clickBuilding });
     init();
-    const $buildings = Array.from($scene.querySelectorAll(buildingSelector));
-    $buildings.forEach(setState);
-    $optionPanel.innerHTML = Object.entries(stages).reduce((sum, [key, value]) =>
-        `${sum}${[['guid', key], ['stage', value], ['homestyle', palettes[key]]].reduce(interpolate, optionTemplate)}`, '');
+    const $buildings = buildings.map(setState);
+    $optionPanel.innerHTML = palettes.reduce((sum, { key, name, color }) =>
+        `${sum}${[['guid', key], ['stage', name], ['homestyle', color]].reduce(interpolate, optionTemplate)}`, '');
     Array.from($optionPanel.querySelectorAll('.button-switch')).forEach(($button) => {
         $button.onclick = ({ target }) => {
             const { id } = target;
             const setActiveState = $building => {
-                const fill = buildings[$building.id].state === id ? palettes[id] : 'rgba(255, 255, 255, .3)';
+                const buildingIndex = buildings.findIndex(({ selector }) => selector === $building.id);
+                const fill = buildings[buildingIndex].state === id ? getColor(id) : 'rgba(255, 255, 255, .3)';
                 $building.setAttribute('style', `fill: ${fill}`);
             };
             if ($activeOption && $activeOption.isSameNode(target) === false) {
@@ -87,7 +92,7 @@ const insertView = (text) => {
                 $activeOption = target;
             }
             else {
-                $buildings.forEach(setState);
+                buildings.forEach(setState);
             }
         };
     });
