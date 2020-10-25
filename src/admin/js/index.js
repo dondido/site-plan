@@ -72,10 +72,10 @@ var jseditor, jedata = {
 			},
 			"buildings": {
 				"type": "array",
-				"title": "Units",
+				"title": "Lots",
 				"items": {
 					"type": "object",
-					"title": "Unit",
+					"title": "Lot",
 					"properties": {
 						"name": {
 							"type": "string",
@@ -99,7 +99,7 @@ var jseditor, jedata = {
 						},
 						"uid": {
 							"type": "string",
-							"title": "Unit ID"
+							"title": "Lot ID"
 						},
 						"selector": {
 							"type": "string",
