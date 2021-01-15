@@ -93,7 +93,7 @@ This toolkit can assist you automate painful or time-consuming tasks in your dev
 ```js
 const terser = require('terser');
 const cleanCss = require('clean-css');
-const uglify = c => terser.minify(c).code;
+const uglify = c => terser.minify(c).then(({ code }) => code);
 const clean = c => new cleanCss().minify(c).styles;
 const move = filePath => filePath.replace('src', 'dist');
 const filterJs = c => c.endsWith('.js');

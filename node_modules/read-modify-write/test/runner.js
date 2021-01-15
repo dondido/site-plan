@@ -15,7 +15,18 @@ function run() {
 		// For each test, we try to execute the
 		// provided function. 
 		try {
-			t.fn()
+			const output = t.fn();
+			if(output instanceof Promise) {
+				return output
+					.then(() => console.log('OK    ', t.name))
+					.catch((e) => {
+						// Exceptions, if any, are caught
+						// and the test is considered failed
+						console.log('FAIL  ', t.name)
+						// log the stack of the error
+						console.log(e.stack)
+					}); // Error: Whoops!
+			}
 			// If there is no exception
 			// that means it ran correctly
 			console.log('OK    ', t.name)

@@ -30,6 +30,14 @@ test('Should properly modify file content', () => {
     assert.equal(Object.values(rmw(src, null, filterHtml, modify))[0].content, modify(html));
 });
 
+test('Should properly async modify file content', () => {
+    const filterHtml = c => c.endsWith('.html');
+    const updateContent = c => c.replace('<script src="script.js"></script>', `<script>${code}</script`);
+    const modify = c => Promise.resolve(updateContent(c));
+    const result = rmw(src, null, filterHtml, modify);
+    Object.values(result)[0].content.then(content => assert.equal(content, updateContent(html)));
+});
+
 test('Should properly copy files to destination folder', () => {
     clearFiles();
     rmw(src, move);

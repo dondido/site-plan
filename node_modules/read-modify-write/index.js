@@ -18,11 +18,18 @@ const copy = function(ref) {
         return { content: modify ? modify(read()) : read() };
     }
     const target = move(ref);
+    const writeContent = content => {
+        fs.writeFileSync(target, content, 'utf8');
+        return { target, content };
+    };
     fs.mkdirSync(path.dirname(target), { recursive: true });
     if (modify) {
         const content = modify(read());
+        if (content instanceof Promise) {
+            return content.then(writeContent);
+        }
         fs.writeFileSync(target, content, 'utf8');
-        return { target, content };
+        return writeContent(content);
     }
     fs.copyFileSync(ref, target);
     return { target };

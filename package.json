@@ -19,7 +19,7 @@
   "homepage": "github.com/dondido/site-plan#readme",
   "devDependencies": {
     "clean-css": "^4.2.3",
-    "read-modify-write": "^1.0.4",
-    "terser": "^4.6.7"
+    "read-modify-write": "^1.0.5",
+    "terser": "^5.5.1"
   }
 }
