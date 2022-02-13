@@ -183,7 +183,6 @@ jseditor.on('ready', function () {
 		}));
 
 	}, false);
-	console.log(jseditor.root.getInput, 999);
 	$uploadPlan.onchange = ({ target }) => {
 		const [file] = target.files;
 		const reader = new FileReader();
