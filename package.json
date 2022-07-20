@@ -20,6 +20,6 @@
   "devDependencies": {
     "clean-css": "^4.2.3",
     "read-modify-write": "^1.0.5",
-    "terser": "^5.5.1"
+    "terser": "^5.14.2"
   }
 }
