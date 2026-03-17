@@ -88,7 +88,3 @@ function watchSrcChanges() {
 }
 
 watchSrcChanges();
-
-/* rmw('src', move);
-rmw('docs', move, filterJs, uglify);
-rmw('docs', move, filterCss, clean); */
