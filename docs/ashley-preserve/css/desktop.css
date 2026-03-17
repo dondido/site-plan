@@ -1,0 +1,16 @@
+.scrollable-area {
+    scrollbar-color: #aeb3b9 #f1f1f1;
+    scrollbar-width: thin;
+}
+/* width */
+.scrollable-area::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+.scrollable-area::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}   
+/* Handle */
+.scrollable-area::-webkit-scrollbar-thumb {
+    background: #aeb3b9; 
+}

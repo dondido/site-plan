@@ -1,6 +1,6 @@
 {
   "name": "site-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Site plan viewer",
   "main": ".eslintrc.js",
   "scripts": {
