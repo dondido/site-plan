@@ -54,7 +54,7 @@ const clickBuilding = (x, y) => {
             ref.homestyle = palette.color;
             ref.stage = palette.name;
             $modalBody.innerHTML = Object.entries(ref).reduce(interpolate, modalTemplate);
-            $modal.classList.add('opened');
+            $modal.showModal();
         }
     }
 };
@@ -119,7 +119,6 @@ Promise.all([sitePromise, planPromise, optionPromise, modalPromise])
     .then(([site]) => insertView(site));
 
 $optionsButton.onclick = () => $optionPanel.toggleAttribute('hidden');
-document.querySelector('.modal-close-button').onclick = () => $modal.classList.remove('opened');
 document.querySelector('.print-button').onclick = () => window.print();
 document.querySelector('.reset-button').onclick = reset;
 

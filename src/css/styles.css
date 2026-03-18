@@ -149,13 +149,14 @@ body {
 .scrollable-area {
     overflow: auto;
 }
-.modal.opened {
+.modal[open] {
     display: flex;
 }
   /* The Close Button */
 .modal-close-button {
     color: #aaaaaa;
     position: absolute;
+    caret-color: transparent;
     right: 0;
     width: 40px;
     height: 40px;
