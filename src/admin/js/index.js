@@ -42,34 +42,86 @@ var jseditor, jedata = {
 				"maximum": 200,
 				"title": "Zoom ratio"
 			},
-			"palettes": {
-				"type": "array",
-				"title": "Color palettes",
-				"items": {
-					"type": "object",
-					"title": "Palette",
-					"properties": {
-						"key": {
-							"type": "string",
-							"title": "Unique key"
-						},
-						"name": {
-							"type": "string",
-							"title": "Name"
-						},
-						"color": {
-							"type": "string",
-							"format": "color",
-							"title": "Color"
-						}
-					},
-					"required": [
-						"key",
-						"name",
-						"color"
-					]
-				}
-			},
+            "model": {
+                "type": "object",
+                "title": "Model",
+                "properties": {
+                    "inputType": {
+                        "type": "string",
+                        "enum": ["button", "checkbox", "radio"]
+                    },
+                    "items": {
+                        "type": "array",
+                        "title": "Models",
+                        "items": {
+                            "type": "object",
+                            "title": "Model",
+                            "properties": {
+                                "key": {
+                                    "type": "string",
+                                    "title": "Unique key"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "title": "Name"
+                                },
+                                "active": {
+                                    "type": "boolean",
+                                    "format": "checkbox"
+                                }
+                            }
+                        },
+                        "required": [
+                            "key",
+                            "name",
+                            "active"
+                        ]
+                    },
+                }
+            },
+            "palettes": {
+                "type": "object",
+                "title": "Color",
+                "properties": {
+                    "inputType": {
+                        "type": "string",
+                        "enum": ["button", "checkbox", "radio"]
+                    },
+                    "items": {
+                        "type": "array",
+                        "title": "Palettes",
+                        "items": {
+                            "type": "object",
+                            "title": "Palette",
+                            "properties": {
+                                "key": {
+                                    "type": "string",
+                                    "title": "Unique key"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "title": "Name"
+                                },
+                                "color": {
+                                    "type": "string",
+                                    "format": "color",
+                                    "title": "Color"
+                                },
+                                "active": {
+                                    "type": "boolean",
+                                    "format": "checkbox"
+                                }
+                            },
+                            "required": [
+                                "key",
+                                "name",
+                                "color",
+                                "active"
+                            ]
+                        }
+                    }
+                },
+            },
 			"buildings": {
 				"type": "array",
 				"title": "Lots",
@@ -109,6 +161,10 @@ var jseditor, jedata = {
 							"type": "string",
 							"title": "State"
 						},
+                        "model": {
+							"type": "string",
+							"title": "Model"
+						},
 						"type": {
 							"type": "string",
 							"title": "Type"
@@ -131,6 +187,7 @@ var jseditor, jedata = {
 						"src",
 						"url",
 						"elevation",
+                        "model",
 						"price",
 						"uid",
 						"selector",
@@ -145,6 +202,7 @@ var jseditor, jedata = {
 		},
 		"required": [
 			"name",
+            "model",
 			"zoomRatio",
 			"palettes",
 			"buildings"

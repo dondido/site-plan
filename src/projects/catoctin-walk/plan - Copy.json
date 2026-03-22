@@ -1,0 +1,74 @@
+{
+  "name": "",
+  "zoomRatio": 100,
+  "model": {
+    "inputType": "radio",
+    "items": [
+      {
+        "key": "townhomes",
+        "name": "4-Level Townhomes"
+      },
+      {
+        "key": "condominiums",
+        "name": "2-Level Condominiums"
+      }
+    ]
+  },
+  "palettes": {
+    "inputType": "radio",
+    "items": [
+        {
+        "key": "",
+        "name": "All",
+        "color": "#897a61"
+        },
+        {
+        "key": "available",
+        "name": "Available",
+        "color": "#8b6448"
+        },
+        {
+        "key": "sold",
+        "name": "Sold",
+        "color": "#281d15"
+        },
+        {
+        "key": "notreleased",
+        "name": "Not Released",
+        "color": "#897a61"
+        }
+    ]
+  },
+  "buildings": [
+    {
+      "name": "",
+      "src": "",
+      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_1_3_",
+      "selector": "Building_1_3_",
+      "state": "available",
+      "model": "",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "",
+      "src": "",
+      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_2_3_",
+      "selector": "Building_2_3_",
+      "state": "all",
+      "model": "",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    }
+  ]
+}

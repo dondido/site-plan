@@ -1,28 +1,31 @@
 {
   "name": "Ashley Preserve",
   "zoomRatio": 100,
-  "palettes": [
-    {
-      "key": "reserved",
-      "name": "Reversed",
-      "color": "#6e8da0"
-    },
-    {
-      "key": "sold",
-      "name": "Sold",
-      "color": "#bbc1b0"
-    },
-    {
-      "key": "model",
-      "name": "Model",
-      "color": "#244b5f"
-    },
-    {
-      "key": "available",
-      "name": "Available",
-      "color": "#e7da97"
-    }
-  ],
+  "palettes": {
+    "inputType": "button",
+    "items": [
+        {
+            "key": "reserved",
+            "name": "Reversed",
+            "color": "#6e8da0"
+        },
+        {
+            "key": "sold",
+            "name": "Sold",
+            "color": "#bbc1b0"
+        },
+            {
+            "key": "model",
+            "name": "Model",
+            "color": "#244b5f"
+        },
+        {
+            "key": "available",
+            "name": "Available",
+            "color": "#e7da97"
+        }
+    ]
+  },
   "buildings": [
     {
       "name": "Madeline",

@@ -61,13 +61,13 @@ function copyProjectFolders() {
   }
 }
 
-function buildAndMinify() {
+/* function buildAndMinify() {
   copyProjectFolders();
   rmw('docs', move, filterJs, uglify);
   rmw('docs', move, filterCss, clean);
 }
 
-buildAndMinify();
+buildAndMinify(); */
 
 // Watch for changes in src and re-trigger project copy
 let watchTimer = null;
@@ -81,7 +81,7 @@ function watchSrcChanges() {
     if (watchTimer) clearTimeout(watchTimer);
     watchTimer = setTimeout(() => {
       console.log('Re-syncing docs from src...');
-      buildAndMinify();
+      copyProjectFolders();
       watchTimer = null;
     }, 150);
   });

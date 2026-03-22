@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1728 1728" style="enable-background:new 0 0 1728 1728;" xml:space="preserve">
+	 viewBox="0 0 1728 1728" style="enable-background:new 0 0 1728 1728;">
 <style type="text/css">
 	.st0{fill:#211E1F;}
 	.st1{fill:#C1B08F;stroke:#000000;stroke-width:0.65;stroke-miterlimit:10;}
@@ -15,7 +13,6 @@
 	</image>
 </g>
 <g id="Trees">
-	
 		<image style="overflow:visible;" width="7200" height="7200" xlink:href="catoctin-walk-vegetation.avif"  transform="matrix(0.24 0 0 0.24 0 0)">
 	</image>
 </g>
@@ -1905,95 +1902,53 @@
 	</g>
 </g>
 <g id="Buildings_2_">
-	<g id="Building_45_3_">
-		
-			<rect x="1350.8" y="836.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -65.202 115.8888)" class="st1" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_23_3_">
-		
-			<rect x="1180.5" y="838.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -65.9323 102.0821)" class="st1" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_22_3_">
-		
-			<rect x="909.1" y="837.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -66.7088 80.0682)" class="st1" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_1_3_">
-		
-			<rect x="740.2" y="841.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -67.581 66.3814)" class="st1" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_12_3_">
-		
-			<rect x="871.2" y="318.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -24.8138 75.2852)" class="st1" width="86.3" height="48.9"/>
-	</g>
-	<g id="Building_33_3_">
-		
-			<rect x="1141.5" y="299.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -22.3941 97.1472)" class="st1" width="86.3" height="48.9"/>
-	</g>
-	<g id="Building_11_3_">
-		
-			<rect x="703.3" y="330.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -26.3174 61.7055)" class="st1" width="86.3" height="48.9"/>
-	</g>
-	<g id="Building_34_3_">
-		
-			<rect x="1309.7" y="287.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -20.8306 110.7447)" class="st1" width="86.3" height="48.9"/>
-	</g>
-	<g id="Building_46_3_">
-		<rect x="599.6" y="1388.4" class="st1" width="85.9" height="47.8"/>
-	</g>
-	<g id="Building_7A_3_">
-		<polygon class="st2" points="1270.2,1036.8 1392.9,1036.8 1392.9,1036.8 1270.2,1095 		"/>
-	</g>
-	<g id="Building_6A_3_">
-		<polygon class="st2" points="1270.2,1094.9 1393,1094.9 1393,1094.9 1270.2,1152.7 		"/>
-	</g>
-	<g id="Building_5A_3_">
-		<polygon class="st2" points="1270.2,1152.7 1392.7,1152.7 1392.7,1152.7 1270.2,1210.4 		"/>
-	</g>
-	<g id="Building_4A_3_">
-		<polygon class="st2" points="1270.2,1210.4 1393,1210.4 1393,1210.4 1270,1268.4 		"/>
-	</g>
-	<g id="Building_3A_3_">
-		<polygon class="st2" points="1270,1268.4 1392.7,1268.4 1392.7,1268.4 1270,1326.2 		"/>
-	</g>
-	<g id="Building_2A_3_">
-		<polygon class="st2" points="1270,1326.2 1393,1326.4 1393,1326.4 1270.2,1384.2 		"/>
-	</g>
-	<g id="Building_1A_3_">
-		<polygon class="st2" points="1270.2,1384.2 1393,1384.1 1393,1384.1 1270.2,1442.1 		"/>
-	</g>
-	<g id="Building_14A_2_">
+	<rect id="Building_45_3_" x="1350.8" y="836.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -65.202 115.8888)" class="st1" width="86.3" height="47.6"/>
+	<rect id="Building_23_3_" x="1180.5" y="838.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -65.9323 102.0821)" class="st1" width="86.3" height="47.6"/>
+	<rect id="Building_22_3_" x="909.1" y="837.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -66.7088 80.0682)" class="st1" width="86.3" height="47.6"/>
+	<rect id="Building_1_3_" x="740.2" y="841.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -67.581 66.3814)" class="st1" width="86.3" height="47.6"/>
+	<rect id="Building_12_3_" x="871.2" y="318.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -24.8138 75.2852)" class="st1" width="86.3" height="48.9"/>
+	<rect id="Building_33_3_" x="1141.5" y="299.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -22.3941 97.1472)" class="st1" width="86.3" height="48.9"/>
+	<rect id="Building_11_3_" x="703.3" y="330.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -26.3174 61.7055)" class="st1" width="86.3" height="48.9"/>
+	<rect id="Building_34_3_" x="1309.7" y="287.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -20.8306 110.7447)" class="st1" width="86.3" height="48.9"/>
+	<rect id="Building_46_3_" x="599.6" y="1388.4" class="st1" width="85.9" height="47.8"/>
+	<polygon id="Building_7A_3_" class="st2" points="1270.2,1036.8 1392.9,1036.8 1392.9,1036.8 1270.2,1095 		"/>
+	<polygon id="Building_6A_3_" class="st2" points="1270.2,1094.9 1393,1094.9 1393,1094.9 1270.2,1152.7 		"/>
+	<polygon id="Building_5A_3_" class="st2" points="1270.2,1152.7 1392.7,1152.7 1392.7,1152.7 1270.2,1210.4 		"/>
+	<polygon id="Building_4A_3_" class="st2" points="1270.2,1210.4 1393,1210.4 1393,1210.4 1270,1268.4 		"/>
+	<polygon id="Building_3A_3_" class="st2" points="1270,1268.4 1392.7,1268.4 1392.7,1268.4 1270,1326.2 		"/>
+	<polygon id="Building_2A_3_" class="st2" points="1270,1326.2 1393,1326.4 1393,1326.4 1270.2,1384.2 		"/>
+	<polygon id="Building_1A_3_" class="st2" points="1270.2,1384.2 1393,1384.1 1393,1384.1 1270.2,1442.1 		"/>
+	<g>
 		<g>
-			<polygon class="st2" points="798,1036.3 920.6,1036.3 920.6,1094.9 920.6,1094.9 			"/>
+			<polygon id="Building_14A_2_" class="st2" points="798,1036.3 920.6,1036.3 920.6,1094.9 920.6,1094.9 			"/>
 		</g>
 	</g>
-	<g id="Building_13A_2_">
+	<g>
 		<g>
-			<polygon class="st2" points="798,1094.9 920.6,1094.9 920.6,1152.7 920.6,1152.7 			"/>
+			<polygon  id="Building_13A_2_" class="st2" points="798,1094.9 920.6,1094.9 920.6,1152.7 920.6,1152.7 			"/>
 		</g>
 	</g>
-	<g id="Building_12A_2_">
+	<g>
 		<g>
-			<polygon class="st2" points="798,1152.7 920.6,1152.7 920.6,1210.4 920.6,1210.4 			"/>
+			<polygon id="Building_12A_2_" class="st2" points="798,1152.7 920.6,1152.7 920.6,1210.4 920.6,1210.4 			"/>
 		</g>
 	</g>
-	<g id="Building_11A_2_">
+	<g>
 		<g>
-			<polygon class="st2" points="798.7,1210.4 921.4,1210.4 921.4,1268.2 921.4,1268.2 			"/>
+			<polygon id="Building_11A_2_" class="st2" points="798.7,1210.4 921.4,1210.4 921.4,1268.2 921.4,1268.2 			"/>
 		</g>
 	</g>
-	<g id="Building_10A_2_">
+	<g>
 		<g>
-			<polygon class="st2" points="798.3,1268.2 921,1268.2 921,1325.9 921,1325.9 			"/>
+			<polygon id="Building_10A_2_" class="st2" points="798.3,1268.2 921,1268.2 921,1325.9 921,1325.9 			"/>
 		</g>
 	</g>
-	<g id="Building_9A_2_">
+	<g>
 		<g>
-			<polygon class="st2" points="798.3,1325.9 921,1325.9 921,1383.7 921,1383.7 			"/>
+			<polygon id="Building_9A_2_" class="st2" points="798.3,1325.9 921,1325.9 921,1383.7 921,1383.7 			"/>
 		</g>
 	</g>
-	<g id="Building_8A_3_">
-		<polygon class="st2" points="798.6,1383.4 921,1383.7 920.6,1441.4 920.6,1441.4 		"/>
-	</g>
+	<polygon id="Building_8A_3_" class="st2" points="798.6,1383.4 921,1383.7 920.6,1441.4 920.6,1441.4 		"/>
 	<polygon id="Building_14B_3_" class="st3" points="798,1036.1 920.6,1094.9 798,1094.9 	"/>
 	<polygon id="Building_13B_3_" class="st3" points="798,1094.9 920.6,1152.7 798,1152.7 	"/>
 	<polygon id="Building_12B_3_" class="st3" points="798.4,1152.7 920.6,1210.4 920.6,1210.4 798.7,1210.4 	"/>
@@ -2008,175 +1963,50 @@
 	<polygon id="Building_3B_3_" class="st3" points="1270,1326.2 1392.7,1268.4 1393,1326.4 1270,1326.2 	"/>
 	<polygon id="Building_2B_3_" class="st3" points="1270.2,1384.2 1393,1326.4 1393,1384.1 1270.2,1384.2 	"/>
 	<polygon id="Building_1B_3_" class="st3" points="1270.2,1442.1 1393,1384.2 1393,1442.1 	"/>
-	<g id="Building_14_3_">
-		
-			<rect x="879" y="414.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -32.5306 76.2297)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_13_3_">
-		
-			<rect x="875.1" y="367.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -28.6988 75.7607)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_15_3_">
-		
-			<rect x="882.8" y="462.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -36.3625 76.6987)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_16_3_">
-		
-			<rect x="886.7" y="509.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -40.1943 77.1677)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_17_3_">
-		
-			<rect x="890.5" y="557" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -44.0262 77.6367)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_31_3_">
-		
-			<rect x="1149.3" y="395.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -30.111 98.0917)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_32_3_">
-		
-			<rect x="1145.4" y="348.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -26.2791 97.6227)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_30_3_">
-		
-			<rect x="1153.2" y="443.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -33.9428 98.5607)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_29_3_">
-		
-			<rect x="1157" y="490.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -37.7747 99.0296)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_28_3_">
-		
-			<rect x="1160.9" y="538.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -41.6065 99.4986)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_9_3_">
-		
-			<rect x="711.1" y="426.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -34.0342 62.65)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_10_3_">
-		
-			<rect x="707.2" y="379.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -30.2024 62.181)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_8_3_">
-		
-			<rect x="714.9" y="473.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -37.8661 63.119)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_7_3_">
-		
-			<rect x="718.8" y="521.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -41.6979 63.588)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_6_3_">
-		
-			<rect x="722.6" y="568.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -45.5298 64.057)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_36_3_">
-		
-			<rect x="1317.5" y="383.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -28.5474 111.6891)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_35_3_">
-		
-			<rect x="1313.6" y="336.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -24.7156 111.2202)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_37_3_">
-		
-			<rect x="1321.3" y="430.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -32.3793 112.1581)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_38_3_">
-		
-			<rect x="1325.2" y="478.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -36.2111 112.6271)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_39_3_">
-		
-			<rect x="1329" y="525.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -40.043 113.0961)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_40_3_">
-		
-			<rect x="1331.5" y="598.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -45.9896 113.5374)" class="st4" width="86.3" height="48.9"/>
-	</g>
-	<g id="Building_42_3_">
-		
-			<rect x="1339.3" y="694.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -53.7065 114.4819)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_41_3_">
-		
-			<rect x="1335.4" y="647.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -49.8746 114.0129)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_43_3_">
-		
-			<rect x="1343.1" y="742" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -57.5383 114.9509)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_44_3_">
-		
-			<rect x="1347" y="789.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -61.3702 115.4198)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_26_3_">
-		
-			<rect x="1168.9" y="696.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -54.4367 100.6752)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_27_3_">
-		
-			<rect x="1165.1" y="649.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -50.6049 100.2062)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_25_3_">
-		
-			<rect x="1172.8" y="744.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -58.2686 101.1441)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_24_3_">
-		
-			<rect x="1176.7" y="791.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -62.1004 101.6131)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_19_3_">
-		
-			<rect x="897.6" y="695.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -55.2132 78.6612)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_18_3_">
-		
-			<rect x="893.7" y="647.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -51.3813 78.1922)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_20_3_">
-		
-			<rect x="901.4" y="742.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -59.045 79.1302)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_21_3_">
-		
-			<rect x="905.3" y="790" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -62.8769 79.5992)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_4_3_">
-		
-			<rect x="728.6" y="699.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -56.0854 64.9745)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_5_3_">
-		
-			<rect x="724.8" y="651.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -52.2536 64.5055)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_3_3_">
-		
-			<rect x="732.5" y="746.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -59.9173 65.4435)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_2_3_">
-		
-			<rect x="736.4" y="793.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -63.7491 65.9124)" class="st4" width="86.3" height="47.6"/>
-	</g>
-	<g id="Building_53_3_">
-		<rect x="599.6" y="1051.3" class="st4" width="85.9" height="48.5"/>
-	</g>
-	<g id="Building_52_3_">
-		<rect x="599.6" y="1099.8" class="st4" width="85.9" height="48.5"/>
-	</g>
-	<g id="Building_51_3_">
-		<rect x="599.6" y="1148.3" class="st4" width="85.9" height="48.5"/>
-	</g>
-	<g id="Building_50_3_">
-		<rect x="599.6" y="1196.9" class="st4" width="85.9" height="48.5"/>
-	</g>
-	<g id="Building_49_3_">
-		<rect x="599.6" y="1245.4" class="st4" width="85.9" height="46.5"/>
-	</g>
-	<g id="Building_48_3_">
-		<rect x="599.6" y="1291.9" class="st4" width="85.9" height="48"/>
-	</g>
-	<g id="Building_47_3_">
-		<rect x="599.6" y="1339.9" class="st4" width="85.9" height="48.5"/>
-	</g>
+	<rect id="Building_14_3_" x="879" y="414.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -32.5306 76.2297)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_13_3_" x="875.1" y="367.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -28.6988 75.7607)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_15_3_" x="882.8" y="462.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -36.3625 76.6987)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_16_3_" x="886.7" y="509.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -40.1943 77.1677)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_17_3_" x="890.5" y="557" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -44.0262 77.6367)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_31_3_" x="1149.3" y="395.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -30.111 98.0917)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_32_3_" x="1145.4" y="348.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -26.2791 97.6227)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_30_3_" x="1153.2" y="443.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -33.9428 98.5607)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_29_3_" x="1157" y="490.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -37.7747 99.0296)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_28_3_" x="1160.9" y="538.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -41.6065 99.4986)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_9_3_" x="711.1" y="426.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -34.0342 62.65)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_10_3_" x="707.2" y="379.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -30.2024 62.181)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_8_3_" x="714.9" y="473.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -37.8661 63.119)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_7_3_" x="718.8" y="521.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -41.6979 63.588)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_6_3_" x="722.6" y="568.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -45.5298 64.057)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_36_3_" x="1317.5" y="383.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -28.5474 111.6891)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_35_3_" x="1313.6" y="336.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -24.7156 111.2202)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_37_3_" x="1321.3" y="430.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -32.3793 112.1581)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_38_3_" x="1325.2" y="478.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -36.2111 112.6271)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_39_3_" x="1329" y="525.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -40.043 113.0961)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_40_3_" x="1331.5" y="598.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -45.9896 113.5374)" class="st4" width="86.3" height="48.9"/>
+	<rect id="Building_42_3_" x="1339.3" y="694.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -53.7065 114.4819)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_41_3_" x="1335.4" y="647.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -49.8746 114.0129)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_43_3_" x="1343.1" y="742" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -57.5383 114.9509)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_44_3_" x="1347" y="789.4" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -61.3702 115.4198)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_26_3_" x="1168.9" y="696.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -54.4367 100.6752)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_27_3_" x="1165.1" y="649.3" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -50.6049 100.2062)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_25_3_" x="1172.8" y="744.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -58.2686 101.1441)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_24_3_" x="1176.7" y="791.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -62.1004 101.6131)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_19_3_" x="897.6" y="695.2" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -55.2132 78.6612)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_18_3_" x="893.7" y="647.8" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -51.3813 78.1922)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_20_3_" x="901.4" y="742.6" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -59.045 79.1302)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_21_3_" x="905.3" y="790" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -62.8769 79.5992)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_4_3_" x="728.6" y="699.1" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -56.0854 64.9745)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_5_3_" x="724.8" y="651.7" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -52.2536 64.5055)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_3_3_" x="732.5" y="746.5" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -59.9173 65.4435)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_2_3_" x="736.4" y="793.9" transform="matrix(0.9967 -8.110093e-02 8.110093e-02 0.9967 -63.7491 65.9124)" class="st4" width="86.3" height="47.6"/>
+	<rect id="Building_53_3_" x="599.6" y="1051.3" class="st4" width="85.9" height="48.5"/>
+	<rect id="Building_52_3_" x="599.6" y="1099.8" class="st4" width="85.9" height="48.5"/>
+	<rect id="Building_51_3_" x="599.6" y="1148.3" class="st4" width="85.9" height="48.5"/>
+	<rect id="Building_50_3_" x="599.6" y="1196.9" class="st4" width="85.9" height="48.5"/>
+	<rect id="Building_49_3_" x="599.6" y="1245.4" class="st4" width="85.9" height="46.5"/>
+	<rect id="Building_48_3_" x="599.6" y="1291.9" class="st4" width="85.9" height="48"/>
+	<rect id="Building_47_3_" x="599.6" y="1339.9" class="st4" width="85.9" height="48.5"/>
 	<g id="MTEXT_145_">
 		<g>
 			<g>
@@ -3389,39 +3219,13 @@
 	<g id="Building_1A_2_">
 		<polygon class="st2" points="3111.6,-789.1 3234.4,-789.3 3234.4,-789.3 3111.6,-731.3 		"/>
 	</g>
-	<g id="Building_14A_3_">
-		<g>
-			<polygon class="st2" points="2639.3,-1137.1 2762,-1137.1 2762,-1078.5 2762,-1078.5 			"/>
-		</g>
-	</g>
-	<g id="Building_13A_3_">
-		<g>
-			<polygon class="st2" points="2639.3,-1078.5 2762,-1078.5 2762,-1020.7 2762,-1020.7 			"/>
-		</g>
-	</g>
-	<g id="Building_12A_3_">
-		<g>
-			<polygon class="st2" points="2639.3,-1020.7 2762,-1020.7 2762,-963 2762,-963 			"/>
-		</g>
-	</g>
-	<g id="Building_11A_3_">
-		<g>
-			<polygon class="st2" points="2640.1,-963 2762.7,-963 2762.7,-905.2 2762.7,-905.2 			"/>
-		</g>
-	</g>
-	<g id="Building_10A_3_">
-		<g>
-			<polygon class="st2" points="2639.6,-905.2 2762.3,-905.2 2762.3,-847.5 2762.3,-847.5 			"/>
-		</g>
-	</g>
-	<g id="Building_9A_3_">
-		<g>
-			<polygon class="st2" points="2639.6,-847.5 2762.3,-847.5 2762.3,-789.7 2762.3,-789.7 			"/>
-		</g>
-	</g>
-	<g id="Building_8A_2_">
-		<polygon class="st2" points="2640,-790 2762.3,-789.7 2762,-732 2762,-732 		"/>
-	</g>
+	<polygon id="Building_14A_3_" class="st2" points="2639.3,-1137.1 2762,-1137.1 2762,-1078.5 2762,-1078.5 			"/>
+	<polygon id="Building_13A_3_" class="st2" points="2639.3,-1078.5 2762,-1078.5 2762,-1020.7 2762,-1020.7 			"/>
+	<polygon id="Building_12A_3_" class="st2" points="2639.3,-1020.7 2762,-1020.7 2762,-963 2762,-963 			"/>
+	<polygon id="Building_11A_3_" class="st2" points="2640.1,-963 2762.7,-963 2762.7,-905.2 2762.7,-905.2 			"/>
+	<polygon id="Building_10A_3_" class="st2" points="2639.6,-905.2 2762.3,-905.2 2762.3,-847.5 2762.3,-847.5 			"/>
+	<polygon id="Building_9A_3_" class="st2" points="2639.6,-847.5 2762.3,-847.5 2762.3,-789.7 2762.3,-789.7 			"/>
+	<polygon id="Building_8A_2_" class="st2" points="2640,-790 2762.3,-789.7 2762,-732 2762,-732 		"/>
 	<polygon id="Building_14B_2_" class="st3" points="2639.3,-1137.3 2762,-1078.5 2639.3,-1078.5 	"/>
 	<polygon id="Building_13B_2_" class="st3" points="2639.3,-1078.5 2762,-1020.7 2639.3,-1020.7 	"/>
 	<polygon id="Building_12B_2_" class="st3" points="2639.7,-1020.7 2762,-963 2762,-963 2640.1,-963 	"/>
@@ -4772,3 +4576,6 @@
 	</g>
 </g>
 </svg>
+
+
+

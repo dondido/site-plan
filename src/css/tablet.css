@@ -13,17 +13,21 @@
 .zoom-control {
     display: none;
 }
-.options-panel {
+.menu {
     bottom: 59px;
     left: 2px;
     top: auto;
+}
+.plan-logo {
+    width: 80px;
+    display: block;
 }
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     .button-switch:before { 
         margin-left: -4px;
     }
-    .options-panel {
+    .menu {
         bottom: 174px;
     }
 }}

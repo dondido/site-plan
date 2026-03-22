@@ -1,1 +1,182 @@
-import{Drag}from"./gestures.js";import{setTransform}from"./utils.js";let plan,modalTemplate,optionTemplate,drag,$scene,$activeOption;const handleJson=e=>e.json(),handleText=e=>e.text(),$port=document.querySelector(".port"),$view=document.querySelector(".view"),$zoomSlider=document.querySelector(".zoom-slider"),$zoomControl=document.querySelector(".zoom-control"),$modal=document.querySelector(".modal"),$modalBody=document.querySelector(".modal-body"),$optionPanel=document.querySelector(".options-panel"),$optionsButton=document.querySelector(".options-button"),setModalTemplate=e=>modalTemplate=e,setOptionTemplate=e=>optionTemplate=e,interpolate=(e,[t,o])=>e.replace(new RegExp(t.toUpperCase(),"g"),o),zoom=()=>{$view.dataset.z=1+$zoomSlider.value/plan.zoomRatio,$zoomControl.dataset.z=+$zoomSlider.value+100,$view.style.setProperty("--rz",$view.dataset.sx/$view.dataset.z),setTransform($view)},wheel=({deltaY:e})=>{$zoomSlider.value=+$zoomSlider.value+(e>0?-4:4),zoom()},init=()=>{setScale(),drag.attach()},reset=()=>{$view.dataset.x=$view.dataset.y=$zoomSlider.value=0,zoom()},setScale=()=>{if(void 0===$view.dataset.sx){const{width:e,height:t}=$scene.getBoundingClientRect(),o=Math.min(window.innerWidth/e,window.innerHeight/t);$view.dataset.sy=o,$view.dataset.sx=o,setTransform($view)}},clickBuilding=(e,t)=>{const{buildings:o,palettes:n}=plan,i=document.elementsFromPoint(e,t),l=o.find(e=>i.some(t=>e.selector===t.id));if(l){const{state:e}=l,t=n.find(({key:t})=>t===e);t&&(l.homestyle=t.color,l.stage=t.name,$modalBody.innerHTML=Object.entries(l).reduce(interpolate,modalTemplate),$modal.showModal())}},insertView=e=>{const{buildings:t,palettes:o}=plan,n=e=>o.find(({key:t})=>t===e)?.color,i=({selector:e,state:t})=>{const o=$scene.getElementById(e);return o.classList.add("building"),o.setAttribute("style",`fill: ${n(t)}`),o};$view.innerHTML=e,$scene=$view.firstElementChild,drag=new Drag({$zoomSlider:$zoomSlider,zoom:zoom,clickBuilding:clickBuilding}),init();const l=t.map(i);$optionPanel.innerHTML=o.reduce((e,{key:t,name:o,color:n})=>`${e}${[["guid",t],["stage",o],["homestyle",n]].reduce(interpolate,optionTemplate)}`,""),Array.from($optionPanel.querySelectorAll(".button-switch")).forEach(e=>{e.onclick=({target:e})=>{const{id:o}=e,a=e=>{const i=t.findIndex(({selector:t})=>t===e.id),l=t[i].state===o?n(o):"rgba(255, 255, 255, .3)";e.setAttribute("style",`fill: ${l}`)};$activeOption&&!1===$activeOption.isSameNode(e)&&$activeOption.setAttribute("aria-checked",!1);const r="false"===e.getAttribute("aria-checked");e.setAttribute("aria-checked",r),r?(l.forEach(a),$activeOption=e):t.forEach(i)}}),$zoomSlider.oninput=zoom,$port.onwheel=wheel},handlePlan=e=>{plan=e,document.querySelector(".plan-name").textContent=plan.name},sitePromise=fetch("plan.svg").then(handleText),optionPromise=fetch("option.html").then(handleText).then(setOptionTemplate),modalPromise=fetch("modal.html").then(handleText).then(setModalTemplate),planPromise=fetch("plan.json").then(handleJson).then(handlePlan);Promise.all([sitePromise,planPromise,optionPromise,modalPromise]).then(([e])=>insertView(e)),$optionsButton.onclick=()=>$optionPanel.toggleAttribute("hidden"),document.querySelector(".print-button").onclick=()=>window.print(),document.querySelector(".reset-button").onclick=reset;export default()=>({planPromise:planPromise});
+import { Drag } from './gestures.js';
+import { setTransform } from './utils.js';
+
+let plan, modalTemplate, drag, $scene, $activeOption;
+const handleJson = response => response.json();
+const handleText = response => response.text();
+const $port = document.querySelector('.port');
+const $view = document.querySelector('.view');
+const $zoomSlider = document.querySelector('.zoom-slider');
+const $zoomControl = document.querySelector('.zoom-control');
+const $modal = document.querySelector('.modal');
+const $modalBody = document.querySelector('.modal-body');
+const $menu = document.querySelector('.menu');
+const $optionPalettePanel = $menu.querySelector('.options-panel');
+const $optionModelPanel = $menu.querySelector('.options-model');
+const $optionsButton = document.querySelector('.options-button');
+const setModalTemplate = template => modalTemplate = template;
+const interpolate = (acc, [key, value]) => acc.replace(new RegExp(key.toUpperCase(), 'g'), value);
+const zoom = () => {
+    $view.dataset.z = 1 + $zoomSlider.value / plan.zoomRatio;
+    $zoomControl.dataset.z = + $zoomSlider.value + 100;
+    $view.style.setProperty('--rz', $view.dataset.sx / $view.dataset.z);
+    setTransform($view);
+};
+const wheel = ({deltaY}) => {
+    $zoomSlider.value = + $zoomSlider.value + (deltaY > 0 ? -4 : 4);
+    zoom();
+};
+const init = () => {
+    setScale();
+    drag.attach();
+};
+const reset = () => {
+    $view.dataset.x = $view.dataset.y = $zoomSlider.value = 0;
+    zoom();
+};
+const setScale = () => {
+    if($view.dataset.sx === undefined) {
+        const { width, height } = $scene.getBoundingClientRect();
+        const s = Math.min(window.innerWidth / width, window.innerHeight / height);
+        $view.dataset.sy = s;
+        $view.dataset.sx = s;
+        setTransform($view);
+    }
+};
+const clickBuilding = (x, y) => {
+    const { buildings, palettes } = plan;
+    const $targetNodes = document.elementsFromPoint(x, y);
+    const matchBuilding = buiding => $targetNodes.some($node => buiding.selector === $node.id);
+    const building = buildings.find(matchBuilding);
+    if(building) {
+        const { state, src, url } = building;
+        if (!src) {
+            const paletteValue = $optionPalettePanel.querySelector('input:checked')?.value;
+            const modelValue = $optionModelPanel.querySelector('input:checked')?.value;
+            console.log(22221, paletteValue  , modelValue, building.state, building.model);
+            if ([building.state, '', undefined].includes(paletteValue) && ([building.model, '', undefined].includes(modelValue))) {
+                return window.open(url);
+            }
+            return;
+        }
+        const palette = palettes.items.find(({ key }) => key === state);
+        if(palette) {
+            building.homestyle = palette.color;
+            building.stage = palette.name;
+            $modalBody.innerHTML = Object.entries(building).reduce(interpolate, modalTemplate);
+            $modal.showModal();
+        }
+    }
+};
+const insertView = async (text) => {
+    const { buildings, palettes, model } = plan;
+    const getColor = state => palettes.items.find(({ key }) => key === state)?.color;
+    const setState = ({ selector, state }) => {
+        const $building = $scene.getElementById(selector);
+        $building.classList.add('building');
+        $building.setAttribute('style', `fill: ${getColor(state)}`);
+        return $building;
+    };
+    $view.innerHTML = text;
+    $scene = $view.firstElementChild;
+    drag = new Drag({ $zoomSlider, zoom, clickBuilding });
+    init();
+    
+    $zoomSlider.oninput = zoom;
+    $port.onwheel = wheel;
+    const $buildings = buildings.map(setState);
+    const inputTypes = model?.inputType
+        ? [...new Set([model.inputType, palettes.inputType])].map(inputType => fetch(`option-${inputType}.html`).then(handleText))
+        : [fetch(`option-${palettes.inputType}.html`).then(handleText)];
+    const [modelListItemTemplate, paletteListItemTemplate = modelListItemTemplate] = await Promise.all(inputTypes);
+
+    const selectRadioPalette = (modelValue, paletteValue) => {
+        const setActiveState = $building => {
+            const building = buildings.find(({ selector }) => selector === $building.id);
+            if ([building.state, '', undefined].includes(paletteValue) && [building.model, '', undefined].includes(modelValue)) {
+                $building.classList.add('building');
+                $building.setAttribute('style', `fill: ${getColor(building.state)}`);
+                return;
+            }
+            $building.classList.remove('building');
+            $building.setAttribute('style', 'fill: rgba(0, 0, 0, .6)');
+        };
+        $buildings.forEach(setActiveState);
+    }
+    if (model?.inputType === 'radio') {
+        $optionModelPanel.innerHTML = model.items.reduce((sum, { key, name, active }) =>
+            `${sum}${[['guid', key], ['LABEL', name], ['name', 'model'], ['CHECKED', active ? 'checked' : ''],].reduce(interpolate, modelListItemTemplate)}`, '');
+        $optionModelPanel.onclick = ({ target }) => {
+            if (target.matches('input')) {
+                selectRadioPalette(target.value, $optionPalettePanel.querySelector('input:checked')?.value);
+            }
+        };
+    }
+    
+    if (palettes.inputType === 'radio') {
+        $optionPalettePanel.innerHTML = palettes.items.reduce((sum, { key, name, color, active }) =>
+            `${sum}${[['guid', key], ['LABEL', name], ['name', 'palette'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, paletteListItemTemplate)}`, '');
+        selectRadioPalette($optionModelPanel.querySelector('input:checked')?.value, $optionPalettePanel.querySelector('input:checked')?.value);
+        $optionPalettePanel.onclick = ({ target }) => {
+            if (target.matches('input')) {
+                selectRadioPalette($optionModelPanel.querySelector('input:checked')?.value, target.value);
+            }
+        };
+    } else {
+        $optionPalettePanel.innerHTML = palettes.items.reduce((sum, { key, name, color }) =>
+            `${sum}${[['guid', key], ['stage', name], ['homestyle', color]].reduce(interpolate, paletteListItemTemplate)}`, '');
+        $optionPalettePanel.querySelectorAll('.button-switch').forEach(($button) => {
+            $button.onclick = ({ target }) => {
+                const { id } = target;
+                const setActiveState = $building => {
+                    const buildingIndex = buildings.findIndex(({ selector }) => selector === $building.id);
+                    const fill = buildings[buildingIndex].state === id ? getColor(id) : 'rgba(255, 255, 255, .3)';
+                    $building.setAttribute('style', `fill: ${fill}`);
+                };
+                if ($activeOption && $activeOption.isSameNode(target) === false) {
+                    $activeOption.setAttribute('aria-checked', false);
+                }
+                const checked = target.getAttribute('aria-checked') === 'false';
+                target.setAttribute('aria-checked', checked);
+                if(checked) {
+                    $buildings.forEach(setActiveState);
+                    $activeOption = target;
+                }
+                else {
+                    buildings.forEach(setState);
+                }
+            };
+        });
+    }
+    
+    
+};
+const handlePlan = (raw) => {
+    plan = raw;
+    if (plan.name.includes('.')) {
+        const $img = document.createElement('img');
+        $img.src = plan.name;
+        $img.alt = 'Logo';
+        $img.classList.add('plan-logo');
+        return document.querySelector('.plan-name').appendChild($img);
+    }
+    document.querySelector('.plan-name').textContent = plan.name;
+};
+const sitePromise = fetch('plan.svg')
+    .then(handleText);
+
+const modalPromise = fetch('modal.html')
+    .then(handleText)
+    .then(setModalTemplate);
+const planPromise = fetch('plan.json')
+    .then(handleJson)
+    .then(handlePlan);
+
+Promise.all([sitePromise, planPromise, modalPromise])
+    .then(([site]) => insertView(site));
+
+$optionsButton.onclick = () => $menu.toggleAttribute('hidden');
+document.querySelector('.print-button').onclick = () => window.print();
+document.querySelector('.reset-button').onclick = reset;
+
+export default () => ({ planPromise });
