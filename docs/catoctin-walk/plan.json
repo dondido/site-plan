@@ -46,7 +46,6 @@
   },
   "buildings": [
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_1_3_",
       "selector": "Building_1_3_",
       "state": "notreleased",
@@ -67,7 +66,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_2_3_",
       "selector": "Building_2_3_",
       "state": "notreleased",
@@ -88,7 +86,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_3_3_",
       "selector": "Building_3_3_",
       "state": "notreleased",
@@ -109,7 +106,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_4_3_",
       "selector": "Building_4_3_",
       "state": "notreleased",
@@ -130,7 +126,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_5_3_",
       "selector": "Building_5_3_",
       "state": "notreleased",
@@ -151,7 +146,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_6_3_",
       "selector": "Building_6_3_",
       "state": "notreleased",
@@ -172,7 +166,6 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_7_3_",
       "selector": "Building_7_3_",
       "state": "notreleased",
@@ -193,105 +186,90 @@
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_8_3_",
       "selector": "Building_8_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_9_3_",
       "selector": "Building_9_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_10_3_",
       "selector": "Building_10_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_11_3_",
       "selector": "Building_11_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_12_3_",
       "selector": "Building_12_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_13_3_",
       "selector": "Building_13_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_14_3_",
       "selector": "Building_14_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_15_3_",
       "selector": "Building_15_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_16_3_",
       "selector": "Building_16_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_17_3_",
       "selector": "Building_17_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_18_3_",
       "selector": "Building_18_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_19_3_",
       "selector": "Building_19_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_20_3_",
       "selector": "Building_20_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_21_3_",
       "selector": "Building_21_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_22_3_",
       "selector": "Building_22_3_",
       "state": "notreleased",
@@ -333,84 +311,72 @@
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_28_3_",
       "selector": "Building_28_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_29_3_",
       "selector": "Building_29_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_30_3_",
       "selector": "Building_30_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_31_3_",
       "selector": "Building_31_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_32_3_",
       "selector": "Building_32_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_33_3_",
       "selector": "Building_33_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_34_3_",
       "selector": "Building_34_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_35_3_",
       "selector": "Building_35_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_36_3_",
       "selector": "Building_36_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_37_3_",
       "selector": "Building_37_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_38_3_",
       "selector": "Building_38_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_39_3_",
       "selector": "Building_39_3_",
       "state": "notreleased",
@@ -459,154 +425,132 @@
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_46_3_",
       "selector": "Building_46_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_47_3_",
       "selector": "Building_47_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_48_3_",
       "selector": "Building_48_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_49_3_",
       "selector": "Building_49_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_50_3_",
       "selector": "Building_50_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_51_3_",
       "selector": "Building_51_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_52_3_",
       "selector": "Building_52_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_53_3_",
       "selector": "Building_53_3_",
       "state": "notreleased",
       "model": "townhomes"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_14A_2_",
       "selector": "Building_14A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_14B_3_",
       "selector": "Building_14B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_13A_2_",
       "selector": "Building_13A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_13B_3_",
       "selector": "Building_13B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_12A_2_",
       "selector": "Building_12A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_12B_3_",
       "selector": "Building_12B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_11A_2_",
       "selector": "Building_11A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_11B_3_",
       "selector": "Building_11B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_10B_3_",
       "selector": "Building_10B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_10A_2_",
       "selector": "Building_10A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_9B_3_",
       "selector": "Building_9B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_9A_2_",
       "selector": "Building_9A_2_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_8B_3_",
       "selector": "Building_8B_3_",
       "state": "notreleased",
       "model": "condominiums"
     },
     {
-      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
       "uid": "Building_8A_3_",
       "selector": "Building_8A_3_",
       "state": "notreleased",

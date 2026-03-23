@@ -4,6 +4,10 @@
             "approve": true,
             "matchCommandLine": true
         },
-        "Set-Content": true
+        "Set-Content": true,
+        "/^node -e \"\nconst fs = require\\('fs'\\);\nlet data = JSON\\.parse\\(fs\\.readFileSync\\('plan\\.json', 'utf8'\\)\\);\nlet count = 0;\ndata\\.buildings\\.forEach\\(building => \\{\n  if \\(building\\.state === 'notreleased'\\) \\{\n    delete building\\.url;\n    count\\+\\+;\n  \\}\n\\}\\);\nfs\\.writeFileSync\\('plan\\.json', JSON\\.stringify\\(data, null, 2\\)\\);\nconsole\\.log\\('Removed url from', count, 'buildings with notreleased state'\\);\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 }

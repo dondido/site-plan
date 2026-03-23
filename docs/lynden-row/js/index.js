@@ -48,9 +48,9 @@ const clickBuilding = (x, y) => {
     const $targetNodes = document.elementsFromPoint(x, y);
     const matchBuilding = buiding => $targetNodes.some($node => buiding.selector === $node.id);
     const building = buildings.find(matchBuilding);
-    console.log(111, building)
     if(building) {
         const { state, src, url } = building;
+        if (!url) return;
         if (!src) {
             return window.open(url);
         }
@@ -72,7 +72,6 @@ const insertView = async (text) => {
     const setState = ({ selector, state }) => {
         const $building = $scene.getElementById(selector);
         $building.classList.add('building');
-        //$building.setAttribute('style', `fill: ${getColor(state)}`);
         const color = getColor(state);
         if (color !== 'transparent') {
             $building.setAttribute('style', `fill: ${color}`);
@@ -125,7 +124,6 @@ const insertView = async (text) => {
     if (palettes.inputType === 'radio') {
         $optionPalettePanel.innerHTML = palettes.items.reduce((sum, { key, name, color, active }) =>
             `${sum}${[['guid', key], ['LABEL', name], ['name', 'palette'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, paletteListItemTemplate)}`, '');
-        console.log(11110, $optionModelPanel.querySelector('input:checked')?.value, $optionPalettePanel.querySelector('input:checked')?.value)
         selectRadioPalette($optionModelPanel.querySelector('input:checked')?.value, $optionPalettePanel.querySelector('input:checked')?.value);
         $optionPalettePanel.onclick = ({ target }) => {
             if (target.matches('input')) {
