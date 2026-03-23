@@ -48,16 +48,11 @@ const clickBuilding = (x, y) => {
     const $targetNodes = document.elementsFromPoint(x, y);
     const matchBuilding = buiding => $targetNodes.some($node => buiding.selector === $node.id);
     const building = buildings.find(matchBuilding);
+    console.log(111, building)
     if(building) {
         const { state, src, url } = building;
         if (!src) {
-            const paletteValue = $optionPalettePanel.querySelector('input:checked')?.value;
-            const modelValue = $optionModelPanel.querySelector('input:checked')?.value;
-            console.log(22221, paletteValue  , modelValue, building.state, building.model);
-            if ([building.state, '', undefined].includes(paletteValue) && ([building.model, '', undefined].includes(modelValue))) {
-                return window.open(url);
-            }
-            return;
+            return window.open(url);
         }
         const palette = palettes.items.find(({ key }) => key === state);
         if(palette) {
@@ -70,11 +65,18 @@ const clickBuilding = (x, y) => {
 };
 const insertView = async (text) => {
     const { buildings, palettes, model } = plan;
-    const getColor = state => palettes.items.find(({ key }) => key === state)?.color;
+    const getColor = state => {
+        const palette = palettes.items.find(({ key }) => key === state);
+        return palette?.buildingColor || palette?.color || '';
+    };
     const setState = ({ selector, state }) => {
         const $building = $scene.getElementById(selector);
         $building.classList.add('building');
-        $building.setAttribute('style', `fill: ${getColor(state)}`);
+        //$building.setAttribute('style', `fill: ${getColor(state)}`);
+        const color = getColor(state);
+        if (color !== 'transparent') {
+            $building.setAttribute('style', `fill: ${color}`);
+        }
         return $building;
     };
     $view.innerHTML = text;
@@ -93,9 +95,16 @@ const insertView = async (text) => {
     const selectRadioPalette = (modelValue, paletteValue) => {
         const setActiveState = $building => {
             const building = buildings.find(({ selector }) => selector === $building.id);
+                console.log(111111, building, paletteValue, modelValue)
+
             if ([building.state, '', undefined].includes(paletteValue) && [building.model, '', undefined].includes(modelValue)) {
                 $building.classList.add('building');
-                $building.setAttribute('style', `fill: ${getColor(building.state)}`);
+                const color = getColor(building.state);
+                if (color === 'transparent') {
+                    $building.removeAttribute('style');
+                } else {
+                    $building.setAttribute('style', `fill: ${color}`);
+                }
                 return;
             }
             $building.classList.remove('building');
@@ -116,6 +125,7 @@ const insertView = async (text) => {
     if (palettes.inputType === 'radio') {
         $optionPalettePanel.innerHTML = palettes.items.reduce((sum, { key, name, color, active }) =>
             `${sum}${[['guid', key], ['LABEL', name], ['name', 'palette'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, paletteListItemTemplate)}`, '');
+        console.log(11110, $optionModelPanel.querySelector('input:checked')?.value, $optionPalettePanel.querySelector('input:checked')?.value)
         selectRadioPalette($optionModelPanel.querySelector('input:checked')?.value, $optionPalettePanel.querySelector('input:checked')?.value);
         $optionPalettePanel.onclick = ({ target }) => {
             if (target.matches('input')) {

@@ -107,6 +107,10 @@ var jseditor, jedata = {
                                     "format": "color",
                                     "title": "Color"
                                 },
+                                "buildingColor": {
+                                    "type": "string",
+                                    "title": "Building Color"
+                                },
                                 "active": {
                                     "type": "boolean",
                                     "format": "checkbox"

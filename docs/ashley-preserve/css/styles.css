@@ -342,7 +342,7 @@ body {
 }
 
 .building:hover {
-    opacity: .7;
+    opacity: 0;
 }
 
 #menu-switch:checked+.menu-panel {
