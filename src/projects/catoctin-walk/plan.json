@@ -4,14 +4,21 @@
   "model": {
     "inputType": "radio",
     "items": [
-      {
-        "key": "townhomes",
-        "name": "4-Level Townhomes",
+        {
+        "key": "",
+        "name": "Show All",
+        "color": "#800080",
         "active": true
       },
       {
+        "key": "townhomes",
+        "name": "4-Level Townhomes",
+        "color": "#800080"
+      },
+      {
         "key": "condominiums",
-        "name": "2-Level Condominiums"
+        "name": "2-Level Condominiums",
+        "color": "#800080"
       }
     ]
   },

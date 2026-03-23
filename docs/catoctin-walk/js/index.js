@@ -94,8 +94,6 @@ const insertView = async (text) => {
     const selectRadioPalette = (modelValue, paletteValue) => {
         const setActiveState = $building => {
             const building = buildings.find(({ selector }) => selector === $building.id);
-                console.log(111111, building, paletteValue, modelValue)
-
             if ([building.state, '', undefined].includes(paletteValue) && [building.model, '', undefined].includes(modelValue)) {
                 $building.classList.add('building');
                 const color = getColor(building.state);
@@ -112,8 +110,8 @@ const insertView = async (text) => {
         $buildings.forEach(setActiveState);
     }
     if (model?.inputType === 'radio') {
-        $optionModelPanel.innerHTML = model.items.reduce((sum, { key, name, active }) =>
-            `${sum}${[['guid', key], ['LABEL', name], ['name', 'model'], ['CHECKED', active ? 'checked' : ''],].reduce(interpolate, modelListItemTemplate)}`, '');
+        $optionModelPanel.innerHTML = model.items.reduce((sum, { key, name, active, color }) =>
+            `${sum}${[['guid', key], ['LABEL', name], ['name', 'model'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, modelListItemTemplate)}`, '');
         $optionModelPanel.onclick = ({ target }) => {
             if (target.matches('input')) {
                 selectRadioPalette(target.value, $optionPalettePanel.querySelector('input:checked')?.value);

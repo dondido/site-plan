@@ -65,6 +65,11 @@ var jseditor, jedata = {
                                     "type": "string",
                                     "title": "Name"
                                 },
+                                "color": {
+                                    "type": "string",
+                                    "format": "color",
+                                    "title": "Color"
+                                },
                                 "active": {
                                     "type": "boolean",
                                     "format": "checkbox"
@@ -74,6 +79,7 @@ var jseditor, jedata = {
                         "required": [
                             "key",
                             "name",
+                            "color",
                             "active"
                         ]
                     },
