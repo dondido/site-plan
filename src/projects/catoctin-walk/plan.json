@@ -4,12 +4,6 @@
   "model": {
     "inputType": "radio",
     "items": [
-        {
-        "key": "",
-        "name": "Show All",
-        "color": "#800080",
-        "active": true
-      },
       {
         "key": "townhomes",
         "name": "4-Level Townhomes",
