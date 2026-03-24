@@ -33,6 +33,25 @@ const init = () => {
 const reset = () => {
     $view.dataset.x = $view.dataset.y = $zoomSlider.value = 0;
     zoom();
+    if (plan.resetFilters) {
+        // reset model active
+        if (plan.model?.inputType === 'radio') {
+            const $targetModelToUncheck = $optionModelPanel.querySelector('input:checked');
+            if ($targetModelToUncheck) $targetModelToUncheck.checked = false;
+        }
+        // reset palette active
+        if (plan.palettes.inputType === 'radio') {
+            const $targetPaletteToUncheck = $optionPalettePanel.querySelector('input:checked');
+            if ($targetPaletteToUncheck) $targetPaletteToUncheck.checked = false;
+            const palette = plan.palettes.items.find(({ active }) => active);
+            if (palette) {
+                const $targetToActivate = $optionPalettePanel.querySelector(`input[value=${palette.key || '""'}]`);
+                if ($targetToActivate) {
+                    $targetToActivate.click();
+                }
+            }
+        }
+    }
 };
 const setScale = () => {
     if($view.dataset.sx === undefined) {
@@ -116,7 +135,7 @@ const insertView = async (text) => {
     }
     if (model?.inputType === 'radio') {
         $optionModelPanel.innerHTML = model.items.reduce((sum, { key, name, active, color }) =>
-            `${sum}${[['guid', key], ['LABEL', name], ['name', 'model'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, modelListItemTemplate)}`, '');
+            `${sum}${[['guid', key ?? ''], ['LABEL', name], ['name', 'model'], ['CHECKED', active ? 'checked' : ''], ['homestyle', color]].reduce(interpolate, modelListItemTemplate)}`, '');
         $optionModelPanel.onclick = ({ target }) => {
             if (target.matches('input')) {
                 selectRadioPalette(target.value, $optionPalettePanel.querySelector('input:checked')?.value);

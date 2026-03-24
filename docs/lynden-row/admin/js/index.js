@@ -42,6 +42,10 @@ var jseditor, jedata = {
 				"maximum": 200,
 				"title": "Zoom ratio"
 			},
+            "resetFilters": {
+                "type": "boolean",
+                "format": "checkbox"
+            },
             "model": {
                 "type": "object",
                 "title": "Model",
@@ -214,6 +218,7 @@ var jseditor, jedata = {
 			"name",
             "model",
 			"zoomRatio",
+            "resetFilters",
 			"palettes",
 			"buildings"
 		]

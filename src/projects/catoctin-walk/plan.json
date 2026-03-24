@@ -1,6 +1,7 @@
 {
   "name": "./catoctin-walk-logo.svg",
   "zoomRatio": 100,
+  "resetFilters": true,
   "model": {
     "inputType": "radio",
     "items": [
