@@ -69,12 +69,17 @@ const insertView = async (text) => {
         const palette = palettes.items.find(({ key }) => key === state);
         return palette?.buildingColor || palette?.color || '';
     };
-    const setState = ({ selector, state }) => {
+    const setState = ({ selector, state, name }) => {
         const $building = $scene.getElementById(selector);
         $building.classList.add('building');
         const color = getColor(state);
         if (color !== 'transparent') {
             $building.setAttribute('style', `fill: ${color}`);
+        }
+        if (name) {
+            const svgTitle = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            svgTitle.textContent = name;
+            $building.appendChild(svgTitle);
         }
         return $building;
     };
