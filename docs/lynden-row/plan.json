@@ -1,27 +1,277 @@
 {
-    "name": "Lynden Row",
-    "zoomRatio": 100,
-    "palettes": [
-        {
-            "key": "reserved",
-            "name": "Reversed",
-            "color": "#6e8da0"
-        },
-        {
-            "key": "sold",
-            "name": "Sold",
-            "color": "#bbc1b0"
-        },
-        {
-            "key": "model",
-            "name": "Model",
-            "color": "#244b5f"
-        },
-        {
-            "key": "available",
-            "name": "Available",
-            "color": "#e7da97"
-        }
-    ],
-    "buildings": []
+  "name": "./lynden-row-logo.png",
+  "zoomRatio": 100,
+  "resetFilters": true,
+  "palettes": {
+    "inputType": "radio",
+    "items": [
+      {
+        "key": "",
+        "name": "All",
+        "color": "#f8f6ec",
+        "buildingColor": "transparent",
+        "active": true
+      },
+      {
+        "key": "available",
+        "name": "Available",
+        "color": "#a5863a",
+        "buildingColor": "transparent",
+        "active": false
+      },
+      {
+        "key": "sold",
+        "name": "Sold",
+        "color": "#111921",
+        "active": false
+      },
+      {
+        "key": "notreleased",
+        "name": "Not Released",
+        "color": "#6e7d7d",
+        "buildingColor": "transparent",
+        "active": false
+      }
+    ]
+  },
+  "buildings": [
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_01",
+      "selector": "Building_01",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "",
+      "src": "",
+      "url": "https://www.knutsoncos.com/now-selling/catoctin-walk",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_02",
+      "selector": "Building_02",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_03",
+      "selector": "Building_03",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_04",
+      "selector": "Building_04",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_05",
+      "selector": "Building_05",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_06",
+      "selector": "Building_06",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_07",
+      "selector": "Building_07",
+      "state": "available",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_08",
+      "selector": "Building_08",
+      "state": "available",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_09",
+      "selector": "Building_09",
+      "state": "available",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_10",
+      "selector": "Building_10",
+      "state": "available",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_11",
+      "selector": "Building_11",
+      "state": "available",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_12",
+      "selector": "Building_12",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_13",
+      "selector": "Building_13",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_14",
+      "selector": "Building_14",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Emerson",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_15",
+      "selector": "Building_15",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Hayden",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_16",
+      "selector": "Building_16",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    },
+    {
+      "name": "The Hayden",
+      "src": "",
+      "url": "",
+      "elevation": "",
+      "price": "",
+      "uid": "Building_17",
+      "selector": "Building_17",
+      "state": "notreleased",
+      "type": "",
+      "sq": "",
+      "bedrooms": "",
+      "bathrooms": ""
+    }
+  ]
 }
