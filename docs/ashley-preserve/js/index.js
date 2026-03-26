@@ -183,7 +183,7 @@ const insertView = async (text) => {
 };
 const handlePlan = (raw) => {
     plan = raw;
-    document.body.classList.add(location.pathname.split('/')[1]);
+    document.body.classList.add(location.pathname.split('/').at(-2));
     if (plan.name.includes('.')) {
         const $img = document.createElement('img');
         $img.src = plan.name;
