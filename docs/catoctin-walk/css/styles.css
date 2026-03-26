@@ -359,6 +359,10 @@ body {
     display: inline-block;
 }
 
+.lynden-row .plan-logo {
+    width: 160px;
+}
+
 .options-button,
 .reset-button,
 .print-button {
